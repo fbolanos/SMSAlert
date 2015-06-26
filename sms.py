@@ -41,12 +41,7 @@ T_MOUSE_STUCK = 10
 def setup_GPIO():
     GPIO.setmode(GPIO.BCM)
     GPIO.setup(G_RANGE_PIN, GPIO.IN)
-
-def set_message(msg):
-    r_list = [requests.post(url, data=data)
-     for data in data_list]
-    for r in r_list:
-        print r.text
+    
 
 def send_sms(date):
     request_list = []
